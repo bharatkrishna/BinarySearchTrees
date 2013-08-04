@@ -12,9 +12,10 @@ import bst.BinarySearchTree;
 
 public class BSTTest {
 	BinarySearchTree<Integer> intBST;
-	BinarySearchTree<Float> floatBST;
+	BinarySearchTree<Float> floatBST; // Just to see Generics in action
+	// For getting System.out.println as a string for use in assertions
+	// Idea taken from http://stackoverflow.com/questions/1119385/junit-test-for-system-out-println/1119559#1119559
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-
 	
 	private void insertItems() {
 		int[] intArray = new int[] {4,5,2,1,3};
